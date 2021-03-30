@@ -3,13 +3,17 @@ import React from 'react'
 function Tarjeta(props) {
     return (
         <React.Fragment>
-            <h2> Nombre: {props.tarjetaData.name} </h2>
-            <p> Estatus de personaje: {props.tarjetaData.status} </p>
-            <p> Especie del personaje: {props.tarjetaData.species} </p>
-            {/* <p> Origen del personaje: {props.tarjetaData.origin} </p> */}
-
+            <div className="lista">
+                {/* img */}
+                <h2> Nombre: {props.tarjetaData.name} </h2>
+                <p> Estatus: {props.tarjetaData.status} </p>
+                <p> Especie: {props.tarjetaData.species} </p>
+                {/* <p> Origen: {props.tarjetaData.origin} </p> */}
+            </div>
         </React.Fragment>
     );
 }
 
 export default Tarjeta;
+
+// falta poner la imagen y el origen pero no me deja pq tiene url y no se como se hace
