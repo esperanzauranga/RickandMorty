@@ -12,16 +12,16 @@ function App() {
         <h1> Personajes de Rick and Morty </h1> 
       </header>
         
-      
+      <div className='contenedor'>
         {listaTarjetas.map(function (tarjeta, idx) {
           return (
-            <div key={idx}>
-              <Tarjeta tarjetaData={tarjeta}/>
-            </div>
+          <div>
+              <Tarjeta tarjetaData={tarjeta} key={idx}/>
+           </div>
           )
         })
       }
-    
+    </div>
 
       <footer>
         Desarrolladores: Esperanza Uranga, Francesca Porro Toyos, Segundo Ustariz

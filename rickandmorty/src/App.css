@@ -11,19 +11,29 @@ header{
     text-align: center;
     
 }
+.contenedor {
+
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center ;
+}
 
 .lista {
   
   margin: 0;
   overflow: hidden;
-  float: left; 
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   margin-top: 80px;
   background-color: whitesmoke;
   text-decoration: none;
   text-align: center;
   font-size: 15px;
-  width: 20%;
   display: inline-block;
+  justify-content: space-between;
   padding: 0.8%; 
   
   
