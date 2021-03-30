@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import Tarjeta from './components/Tarjeta'
 
 
@@ -7,7 +8,10 @@ import listaTarjetas from './rickandmorty.json';
 function App() {
   return (
     <React.Fragment> 
-      <h1> Personajes de Rick and Morty </h1>   
+      <header className = 'header'>
+        <h1> Personajes de Rick and Morty </h1> 
+      </header>
+        
       <ul>
         {listaTarjetas.map(function (tarjeta, idx) {
           return (
@@ -16,9 +20,12 @@ function App() {
             </div>
           )
         })
-
       }
       </ul>
+
+      <footer>
+        Desarrolladores: Esperanza Uranga, Francesca Porro Toyos, Segundo Ustariz
+      </footer>
     </React.Fragment>
  
   );
