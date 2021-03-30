@@ -9,9 +9,11 @@ header{
     top: 0;
     z-index: 10;
     text-align: center;
+    
 }
 
 .lista {
+  
   margin: 0;
   overflow: hidden;
   float: left; 
@@ -22,6 +24,8 @@ header{
   font-size: 15px;
   width: 20%;
   display: inline-block;
+  padding: 0.8%; 
+  
   
 }
 
@@ -36,4 +40,3 @@ footer{
     padding-top: 17px;
 }
 
-/* no se como hacer para ponerlos uno al lado del otro */
